@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate Action</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page-buttons" style="padding: 14px;">
+  <a href="home.html" class="top-btn">Go Back</a>
+</div>
+
+<header>
+<h1>Climate Action</h1>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="team.html">Team</a>
+<a href="content_ST1.html">Content</a>
+</nav>
+</header>
+
+<main>
+
+<h2>Climate Action Gallery</h2>
+
+<img src="images/chelsea-WvusC5M-TM8-unsplash.jpg" width="250" alt="Solar panels" style="margin:5px;" onclick="openImage(this)">
+<img src="images/chris-leboutillier-c7RWVGL8lPA-unsplash.jpg" width="250" alt="Climate Change Consequences" style="margin:5px;" onclick="openImage(this)">
+<img src="images/climate.jpg" width="250" alt="Climate change" style="margin:5px;" onclick="openImage(this)">
+<img src="images/high.jpg" width="250" alt="High impact" style="margin:5px;" onclick="openImage(this)">
+<img src="images/joel-de-vriend-qZ6if8WXl7E-unsplash.jpg" width="250" alt="Nature landscape" style="margin:5px;" onclick="openImage(this)">
+<img src="images/low.jpg" width="250" alt="Low impact" style="margin:5px;" onclick="openImage(this)">
+<img src="images/medium.jpg" width="250" alt="Medium impact" style="margin:5px;" onclick="openImage(this)">
+<img src="images/nick-fewings--2lJGRIY5P0-unsplash.jpg" width="250" alt="Recycling" style="margin:5px;" onclick="openImage(this)">
+
+<div id="popup">
+  <span onclick="closeImage()">X</span>
+ <img id="popupImg" src="images/01.png" alt="Enlarged image">
+</div>
+
+<h2>Welcome to our website!!</h2>
+<p>The aim of our website is to provide information and resources for taking action against climate change.</p>
+
+</main>
+
+<footer>
+<p>Amandeep</p>
+</footer>
+
+<script>
+function openImage(img) {
+  document.getElementById("popup").style.display = "block";
+  document.getElementById("popupImg").src = img.src;
+}
+
+function closeImage() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+<script src="js/Script.js"></script>
+</body>
+</html>
